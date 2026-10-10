@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,78 +7,111 @@
 <title>St Ricky Deliveries | Fast, Safe & Reliable</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f7f7f5;color:#171717;line-height:1.6}
-header{background:#111;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.logo{font-size:23px;font-weight:bold;color:#ffc107}
-.logo small{display:block;color:white;font-size:11px;letter-spacing:4px}
-nav a{color:white;text-decoration:none;margin:0 7px;font-size:14px}
+body{margin:0;font-family:Arial,sans-serif;background:#f7f7f7;color:#222;line-height:1.6}
+header{background:#151515;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:22px;font-weight:bold;color:#ffc107}
+nav a{color:white;text-decoration:none;margin:0 8px}
 nav a:hover{color:#ffc107}
-.hero{background:linear-gradient(120deg,#151515,#30343a);color:white;padding:65px 7%;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}
-.hero>div{flex:1;min-width:250px}
-h1{font-size:clamp(40px,7vw,70px);line-height:1.05;margin:10px 0}
+.hero{background:linear-gradient(120deg,#151515,#383838);color:white;padding:55px 7%;text-align:center}
+.hero h1{font-size:clamp(34px,7vw,58px);margin:0}
 .gold{color:#ffc107}
 .hero p{font-size:18px;color:#eee}
-.bike{font-size:125px;text-align:center}
-.btn{display:inline-block;background:#ffc107;color:#111;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:12px}
-section{padding:48px 7%}
-h2{text-align:center;font-size:32px}
-.intro{text-align:center;color:#666;margin-top:-12px}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-.card{background:white;padding:23px;border-radius:13px;border:1px solid #e4e4e4}
-.card .icon{font-size:32px}
-.card h3{margin:8px 0}
-.card p{color:#606060;font-size:14px}
-.about{background:#ecece8}
-.columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.panel{padding:25px;border-radius:14px;background:white}
-.hours{background:#fff0bf}
-footer{background:#111;color:white;padding:30px 7%;text-align:center}
-footer a{color:#ffc107}
+.bike{font-size:65px}
+.btn{display:inline-block;background:#ffc107;color:#151515;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;margin:6px}
+section{padding:42px 7%}
+h2{text-align:center;font-size:30px}
+.intro{text-align:center;color:#666}
+.services,.prices,.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card,.panel{background:white;padding:22px;border-radius:10px;box-shadow:0 3px 12px #00000012}
+.card h3,.panel h3{margin-top:5px}
+.price{font-size:21px;font-weight:bold;color:#a87500}
+.about{background:#202020;color:white}
+.columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.about .panel{color:#222}
+.review-note{text-align:center;color:#666}
+footer{background:#151515;color:white;text-align:center;padding:24px}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav a{display:inline-block;margin:5px;font-size:14px}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">🏍 ST RICKY <small>DELIVERIES · EST. 2024</small></div>
-<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<div class="logo">ST RICKY DELIVERIES <small style="display:block;color:white;font-size:12px">EST. 2024</small></div>
+<nav>
+<a href="#services">Services</a>
+<a href="#rates">Rates & Prices</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
+
 <main>
-<div class="hero" id="home">
-<div>
-<div class="gold"><b>FAST • SAFE • RELIABLE</b></div>
-<h1><span class="gold">St Ricky</span><br>Deliveries</h1>
-<p><b>Why worry when you got us??</b></p>
-<p>Your packages, our priority. Delivering across Nairobi and beyond.</p>
-<a class="btn" href="https://wa.me/254718644019">🏍 Book a Delivery</a>
-</div>
-<div class="bike">🏍️<p class="gold">SMALL PACKAGES.<br>BIG DREAMS.</p></div>
-</div>
+<section class="hero">
+<div class="bike">🏍️</div>
+<h1>Fast, Safe & <span class="gold">Reliable</span></h1>
+<p>Why worry when you got us?</p>
+<p>We deliver love and care with every delivery.</p>
+<p><strong>Open Monday to Saturday | 9:00 AM – 5:00 PM</strong></p>
+<a class="btn" href="https://wa.me/254718644019">Order on WhatsApp</a>
+<a class="btn" href="#rates">View Our Rates</a>
+</section>
+
 <section id="services">
-<h2>Our Services</h2><p class="intro">We deliver love and care, right to your doorstep.</p>
+<h2>Our Services</h2>
+<p class="intro">Reliable delivery solutions to make your day easier.</p>
 <div class="services">
-<div class="card"><div class="icon">📄</div><h3>Document Delivery</h3><p>Important papers, contracts and files delivered safely.</p></div>
-<div class="card"><div class="icon">📦</div><h3>Parcel Delivery</h3><p>Small and large packages across Nairobi and beyond.</p></div>
-<div class="card"><div class="icon">🍱</div><h3>Food Delivery</h3><p>Your favourite meals, right on time.</p></div>
-<div class="card"><div class="icon">🛍️</div><h3>Shopping & Essentials</h3><p>Groceries, shopping and daily essentials.</p></div>
-<div class="card"><div class="icon">🏍️</div><h3>Same Day & Express</h3><p>When it is urgent, we're on it.</p></div>
-<div class="card"><div class="icon">💛</div><h3>We Deliver Love</h3><p>Thoughtful deliveries for gifts and surprises.</p></div>
+<div class="card"><h3>📄 Document Delivery</h3><p>Fast and careful delivery of documents and parcels.</p></div>
+<div class="card"><h3>📦 Parcel Delivery</h3><p>We help get your packages where they need to go.</p></div>
+<div class="card"><h3>🛍️ Shopping & Pickups</h3><p>Need something collected or delivered? Contact us.</p></div>
+<div class="card"><h3>🎁 Personal Errands</h3><p>Convenient assistance with everyday delivery errands.</p></div>
+<div class="card"><h3>🏍️ Express Delivery</h3><p>Ask us about urgent delivery requests and availability.</p></div>
+<div class="card"><h3>💛 Careful Service</h3><p>Your items matter to us. We aim to deliver with care.</p></div>
 </div>
 </section>
+
+<section id="rates" style="background:#fff8e5">
+<h2>Rates & Prices</h2>
+<p class="intro">Our prices will be confirmed when you contact us, depending on your delivery needs.</p>
+<div class="prices">
+<div class="card"><h3>📍 Local Area Delivery</h3><p>For deliveries within your local area.</p><p class="price">Price to be confirmed</p><a class="btn" href="https://wa.me/254718644019?text=Hi%20St%20Ricky%20Deliveries%2C%20please%20quote%20for%20local%20delivery.">Request a Quote</a></div>
+<div class="card"><h3>🏙️ Across Nairobi</h3><p>Delivery between locations across Nairobi.</p><p class="price">Price to be confirmed</p><a class="btn" href="https://wa.me/254718644019?text=Hi%20St%20Ricky%20Deliveries%2C%20please%20quote%20for%20delivery%20across%20Nairobi.">Request a Quote</a></div>
+<div class="card"><h3>⚡ Express Delivery</h3><p>For urgent deliveries, subject to availability.</p><p class="price">Price to be confirmed</p><a class="btn" href="https://wa.me/254718644019?text=Hi%20St%20Ricky%20Deliveries%2C%20please%20quote%20for%20express%20delivery.">Request a Quote</a></div>
+</div>
+</section>
+
 <section class="about" id="about">
+<h2>About St Ricky Deliveries</h2>
+<p class="intro" style="color:#eee">We aim to make deliveries simple, convenient and reliable. Your satisfaction matters to us.</p>
 <div class="columns">
-<div><h2>About St Ricky Deliveries</h2><p>We are a Nairobi-based delivery service committed to delivering your items safely, quickly and with care. Your trust keeps us moving!</p></div>
-<div class="panel"><h2>Why Choose Us?</h2><p>✅ Fast and on-time delivery</p><p>✅ Safe and secure handling</p><p>✅ Affordable rates</p><p>✅ Friendly, professional service</p></div>
-<div class="panel hours"><h2>Opening Hours</h2><p><b>Monday to Saturday</b></p><p><b>9:00 A.M. – 5:00 P.M.</b></p><p>Closed on Sundays</p></div>
+<div class="panel"><h3>✅ Why Choose Us?</h3><p>Friendly service, convenient communication and careful handling of your deliveries.</p></div>
+<div class="panel"><h3>🕘 Opening Hours</h3><p>Monday to Saturday</p><p>9:00 AM – 5:00 PM</p><p>Sunday: Closed</p></div>
 </div>
 </section>
+
+<section id="reviews">
+<h2>Customer Reviews</h2>
+<p class="intro">We value feedback from every customer.</p>
+<div class="reviews">
+<div class="card"><h3>⭐ Your feedback matters</h3><p>Have we delivered for you? Share your honest experience with us.</p><a class="btn" href="https://wa.me/254718644019?text=My%20St%20Ricky%20Deliveries%20review%3A%20">Leave a Review</a></div>
+<div class="card"><h3>💬 Read customer feedback</h3><p>Contact us on WhatsApp to ask about our service and share feedback.</p><a class="btn" href="https://wa.me/254718644019">Message Us</a></div>
+</div>
+<p class="review-note">Customer reviews and ratings will appear here as genuine feedback is collected.</p>
+</section>
+
 <section id="contact">
-<h2>Contact St Ricky Deliveries</h2><p class="intro">Ready to book? Get in touch today.</p>
+<h2>Contact St Ricky Deliveries</h2>
+<p class="intro">Ready to arrange a delivery? Get in touch today.</p>
 <div class="columns">
-<div class="panel"><h3>Call Us</h3><p><a href="tel:+254718644019">0718 644 019</a></p><p><a href="tel:+254796750783">0796 750 783</a></p></div>
-<div class="panel"><h3>WhatsApp Us</h3><p>Message us to arrange your delivery.</p><a class="btn" href="https://wa.me/254718644019">Chat on WhatsApp</a></div>
-<div class="panel"><h3>Service Area</h3><p>Nairobi, Kenya and beyond.</p></div>
+<div class="panel"><h3>📞 Call Us</h3><p><a href="tel:0718644019">0718 644 019</a></p><p><a href="tel:0796750783">0796 750 783</a></p></div>
+<div class="panel"><h3>💬 WhatsApp Us</h3><p>Message us to arrange a delivery or request a price.</p><a class="btn" href="https://wa.me/254718644019">Chat on WhatsApp</a></div>
+<div class="panel"><h3>📍 Service Area</h3><p>Nairobi and surrounding areas. Contact us to confirm your location.</p></div>
 </div>
 </section>
 </main>
-<footer id="contact"><p><b>ST RICKY DELIVERIES</b> · EST. 2024</p><p>Fast • Safe • Reliable</p><p>Monday–Saturday · 9 A.M.–5 P.M.</p><p>© 2026 St Ricky Deliveries</p></footer>
+
+<footer>
+<p><strong>ST RICKY DELIVERIES</strong> | EST. 2024</p>
+<p>Fast, Safe & Reliable — Why worry when you got us?</p>
+<p>Open Monday to Saturday, 9:00 AM – 5:00 PM</p>
+</footer>
 </body>
 </html>
